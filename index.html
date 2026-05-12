@@ -3,81 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GlassCash | Street-Level Media</title>
+    <title>GlassCash | Decentralized OOH Media</title>
     <style>
-        :root {
-            --navy: #0a192f;
-            --teal: #64ffda;
-            --white: #e6f1ff;
-        }
         body {
-            background-color: var(--navy);
-            color: var(--white);
-            font-family: 'Inter', -apple-system, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
             margin: 0;
+            padding: 0;
+            background-color: #0a192f;
+            color: #e6f1ff;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            align-items: center;
+            justify-content: center;
             text-align: center;
         }
         .container {
             max-width: 600px;
-            padding: 20px;
+            padding: 40px 20px;
         }
-        .logo-frame {
-            border: 2px solid var(--white);
-            width: 80px;
-            height: 80px;
-            margin: 0 auto 30px;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-weight: bold;
-            font-size: 24px;
+        .logo-img {
+            width: 140px; /* Adjust this number to make the logo larger or smaller */
+            height: auto;
+            margin-bottom: 25px;
+            border-radius: 16px; /* Smooths the edges slightly to blend with the background */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Adds a premium shadow effect */
         }
-        .logo-corner {
-            position: absolute;
-            bottom: -5px;
-            right: -5px;
-            background: var(--navy);
-            padding: 2px;
-            color: var(--teal);
+        h1 {
+            font-size: 2.5rem;
+            color: #e6f1ff;
+            margin: 0 0 15px 0;
+            letter-spacing: -0.5px;
         }
-        h1 { font-size: 2.5rem; letter-spacing: -1px; margin-bottom: 10px; }
-        p { color: #8892b0; line-height: 1.6; font-size: 1.1rem; }
-        .cta-button {
+        p.tagline {
+            font-size: 1.2rem;
+            color: #8892b0;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .btn {
             display: inline-block;
-            margin-top: 30px;
-            padding: 12px 30px;
-            border: 1px solid var(--teal);
-            color: var(--teal);
+            background-color: transparent;
+            color: #64ffda;
+            border: 1px solid #64ffda;
+            padding: 15px 30px;
             text-decoration: none;
+            font-size: 1rem;
             border-radius: 4px;
-            transition: 0.3s;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
         }
-        .cta-button:hover {
-            background: rgba(100, 255, 218, 0.1);
+        .btn:hover {
+            background-color: rgba(100, 255, 218, 0.1);
         }
-        footer { margin-top: 50px; font-size: 0.8rem; color: #495670; }
+        .footer {
+            position: absolute;
+            bottom: 20px;
+            color: #495670;
+            font-size: 0.85rem;
+        }
     </style>
 </head>
 <body>
+
     <div class="container">
-        <div class="logo-frame">
-            GC
-            <div class="logo-corner">$</div>
-        </div>
-        <h1>GlassCash</h1>
-        <p>Turning residential windows into premium brand inventory.<br>
-        Zero damage. Weekly verification. Passive income.</p>
+        <img src="logo.png" alt="GlassCash Logo" class="logo-img">
         
-        <p><strong>September 2026 Pilot: University Sailing Club</strong></p>
+        <h1>GLASSCASH</h1>
+        <p class="tagline">Turning residential windows into premium brand inventory.</p>
         
-        <a href="mailto:archie@glasscash.co.uk" class="cta-button">Contact Founder</a>
-        
-        <footer>© 2026 GlassCash Media UK. Built in Swansea.</footer>
+        <a href="mailto:archie@glasscash.co.uk" class="btn">Contact Founder</a>
     </div>
+
+    <div class="footer">
+        glasscash.co.uk
+    </div>
+
 </body>
 </html>
